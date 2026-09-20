@@ -15,7 +15,7 @@ A clean source copy builds and installs as a wheel. The installed CLI completes 
 
 The studio has been exercised for persona generation, live decisions, character selection, probability inspection, growing populations, timeline replay, parallel worlds, printable reports, and persistent usage tracking. The expanded city was checked for district navigation, overhead map, cutaway interiors, fullscreen selection, and a narrow mobile layout. Provider integration was exercised separately from the automated fixture suite.
 
-Published illustrations use synthetic scenarios. The city image contains application-rendered scenery, not credentials, account identifiers, private documents, or usage counters. Local screenshots, generated worlds, reports, usage records, and detailed session logs are excluded from the public source.
+Published illustrations use synthetic scenarios. The README screenshot was explicitly selected for publication and checked for visible credentials, email addresses, and personal account details. Embedded text/EXIF metadata was removed without changing its pixels. Its usage counters describe the local app demonstration. Other local screenshots, generated worlds, reports, usage records, and detailed session logs are excluded from the public source.
 
 ## Release scope
 

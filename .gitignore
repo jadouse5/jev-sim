@@ -20,6 +20,7 @@ artifacts/
 *.pem
 *.key
 credentials*.json
-# Local screenshots may contain account data; publish only the reviewed city image.
+# Publish only explicitly reviewed screenshots and illustrations.
 docs/*.png
 !docs/city-world.png
+!docs/studio-screenshot.png

@@ -6,7 +6,7 @@ An interactive 3D world studio and provider-independent Python simulation framew
 
 **Status: early preview (0.1.0).** Designed to run locally. Synthetic outcomes are exploratory, not validated forecasts.
 
-![Jev-Sim interactive 3D city](docs/city-world.png)
+![Jev-Sim city studio with live usage, synthetic personas, and workspace interiors](docs/studio-screenshot.png)
 
 ## Run it
 
