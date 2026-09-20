@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-sim"
+version = "0.1.0"
+description = "Simulate thousands of futures before your AI makes a decision."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+jev-sim = "jevsim.cli:main"
+
+[project.urls]
+Repository = "https://github.com/jadouse5/jev-sim"
+Issues = "https://github.com/jadouse5/jev-sim/issues"
+
+[tool.setuptools.packages.find]
+include = ["jevsim*"]
+
+[tool.setuptools.package-data]
+jevsim = ["dashboard/*.html", "dashboard/*.css", "dashboard/*.js", "dashboard/vendor/*.js", "dashboard/vendor/*.txt"]

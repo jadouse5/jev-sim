@@ -1,0 +1,7 @@
+Three.js 0.180.0 (MIT)
+https://github.com/mrdoob/three.js/tree/r180
+
+Vendored files: three.module.min.js, three.core.min.js, OrbitControls.js.
+OrbitControls.js imports './three.module.min.js' instead of the bare 'three'
+specifier so this application works without a bundler or runtime CDN.
+See THREE-LICENSE.txt for the original license.

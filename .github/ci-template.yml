@@ -1,0 +1,26 @@
+name: Tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install .
+      - run: python -m unittest discover -s tests -v
+      - run: jev-sim run warehouse --episodes 100 --policy demo
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --check jevsim/dashboard/app.js
+      - run: node --check jevsim/dashboard/live.js
+      - run: node --check jevsim/dashboard/social.js
+      - run: node --test tests/test_report.cjs
+      - run: node --input-type=module --check < jevsim/dashboard/world3d.js

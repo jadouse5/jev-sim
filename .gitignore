@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+.jev-env-*
+.DS_Store
+artifacts/
+
+# Local editor/agent state and private exports
+.codex/
+.agents/
+.idea/
+.vscode/
+*.log
+*.pem
+*.key
+credentials*.json
+# Local screenshots may contain account data; publish only the reviewed city image.
+docs/*.png
+!docs/city-world.png
